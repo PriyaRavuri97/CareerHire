@@ -9,7 +9,7 @@ import 'candidatedetail_screen.dart';
 class CustomPostCard extends StatefulWidget {
   final PostModel.Post post;
   final bool isDarkMode;
-
+//Custom card
   const CustomPostCard({
     required this.post,
     required this.isDarkMode,
