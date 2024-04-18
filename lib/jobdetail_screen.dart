@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'joblistings_screen.dart'; // Importing joblisting_screen.dart where JobListing class is defined
+import 'joblistings_screen.dart';
 
 class AppliedJobModel extends ChangeNotifier {
   late Set<String> _appliedJobs;
