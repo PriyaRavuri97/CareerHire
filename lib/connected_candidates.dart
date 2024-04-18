@@ -11,8 +11,8 @@ class ConnectedCandidates extends ChangeNotifier {
   void connectCandidate(Candidate candidate) {
     if (!_connectedCandidates.contains(candidate)) {
       _connectedCandidates.add(candidate);
-      _candidatePosts[candidate] = []; // Initialize posts list for the candidate
-      notifyListeners(); // Notify listeners of the change
+      _candidatePosts[candidate] = [];
+      notifyListeners();
     }
   }
 

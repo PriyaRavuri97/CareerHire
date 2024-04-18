@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'candidate.dart'; // Import your Candidate class
-import 'post.dart'; // Import your Post class
+import 'candidate.dart';
+import 'post.dart';
 
 class PostService extends ChangeNotifier {
-  List<Post> allPosts = []; // Define allPosts as a class-level variable
+  List<Post> allPosts = [];
 
   Future<List<Post>> fetchPostsForConnectedCandidates(List<Candidate> connectedCandidates) async {
-    allPosts.clear(); // Clear existing posts before fetching new ones
+    allPosts.clear();
 
     for (Candidate candidate in connectedCandidates) {
       Post postForCandidate = await fetchPostForCandidate(candidate);
