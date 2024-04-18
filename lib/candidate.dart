@@ -52,14 +52,14 @@ List<Candidate> candidates = [
     phone: '+1234567890',
   ),
   Candidate(
-    name: 'Maansi',
+    name: 'Mansi',
     position: 'Data Scientist',
     experience: '4 years',
     imageUrl: 'images/maansi.jpeg',
     bio: 'I am a data scientist driven by a curiosity to unravel insights from complex datasets. '
         'With four years of experience, I specialize in machine learning algorithms and statistical analysis, '
         'transforming data into actionable intelligence.',
-    email: 'maansi@example.com',
+    email: 'mansi@example.com',
     phone: '+1987654321',
   ),
 ];

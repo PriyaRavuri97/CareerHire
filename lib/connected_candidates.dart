@@ -27,7 +27,7 @@ class ConnectedCandidates extends ChangeNotifier {
   void addPost(Candidate candidate, String postContent) {
     if (_connectedCandidates.contains(candidate)) {
       _candidatePosts[candidate]?.add(postContent);
-      notifyListeners(); // Notify listeners of the change
+      notifyListeners(); // Notify change
     }
   }
 }
