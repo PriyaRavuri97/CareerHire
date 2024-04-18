@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'candidate.dart'; // Import your Candidate class
-import 'connected_candidates.dart'; // Import ConnectedCandidates class
+import 'candidate.dart';
+import 'connected_candidates.dart';
 
 class CandidateDetailScreen extends StatelessWidget {
   final Candidate candidate;
@@ -10,6 +10,7 @@ class CandidateDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     // Check if the candidate is already connected
     bool isConnected = Provider.of<ConnectedCandidates>(context)
         .connectedCandidates
@@ -122,6 +123,7 @@ class CandidateDetailScreen extends StatelessWidget {
                         ),
                       );
                     } else {
+
                       // Connect the candidate
                       Provider.of<ConnectedCandidates>(context, listen: false)
                           .connectCandidate(candidate);
