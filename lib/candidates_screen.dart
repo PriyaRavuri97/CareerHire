@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'candidate.dart'; // Import your Candidate class
-import 'candidatedetail_screen.dart'; // Import CandidateDetailScreen class
+import 'candidate.dart';
+import 'candidatedetail_screen.dart';
 import 'package:provider/provider.dart';
 
 class CandidatesScreen extends StatelessWidget {
@@ -58,7 +58,7 @@ class CandidatesScreen extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.8), // Semi-transparent white background
+                    color: Colors.white.withOpacity(0.8),
                     borderRadius: BorderRadius.circular(15),
                     boxShadow: [
                       BoxShadow(
